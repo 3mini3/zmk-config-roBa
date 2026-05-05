@@ -91,10 +91,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp L         &kp U         &kp COMMA         &kp PERIOD                                              &kp F        &kp W  &lt 5 R  &kp Y  &lt 5 P
-&kp E      &kp I         &kp A         &kp O             &kp MINUS      &kp ESCAPE            &kp DOUBLE_QUOTES  &kp K        &kp T  &kp N    &kp S  &kp H
-&kp Z      &kp X         &kp C         &kp V             &kp SEMICOLON  &kp TAB               &kp SQT            &kp G        &kp D  &kp M    &kp J  &mt LEFT_SHIFT SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 LANGUAGE_2  &lt 2 SPACE    &lt 3 LANGUAGE_1      &kp BACKSPACE      &lt 1 ENTER                         &kp DELETE
+&kp Q      &kp L         &kp U         &kp COMMA         &kp PERIOD                                                    &kp F        &kp W  &lt 5 R  &kp Y  &lt 5 P
+&kp E      &kp I         &kp A         &kp O             &kp MINUS      &kp ESCAPE            &mt RIGHT_ALT LA(SPACE)  &kp K        &kp T  &kp N    &kp S  &kp H
+&kp Z      &kp X         &kp C         &kp V             &kp SEMICOLON  &kp TAB               &kp SQT                  &kp G        &kp D  &kp M    &kp J  &mt LEFT_SHIFT SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 LANGUAGE_2  &lt 2 SPACE    &lt 3 LANGUAGE_1      &kp BACKSPACE            &lt 1 ENTER                         &kp DELETE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -102,10 +102,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp CARET                &kp  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN
-&kp         &kp PLUS         &kp MINUS      &kp ASTERISK  &kp EQUAL  &kp      &kp  &kp  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp PIPE
-&kp SLASH   &kp DOLLAR       &kp AMPERSAND  &kp PERCENT   &kp TILDE  &kp      &kp  &kp  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp QUESTION    &kp NON_US_BACKSLASH
-&kp         &kp              &kp            &kp           &kp        &kp      &kp  &kp                                                               &kp
+&kp ESCAPE  &kp EXCLAMATION    &kp AT_SIGN    &kp HASH      &kp CARET                      &trans         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN
+&kp PLUS    &kp DOUBLE_QUOTES  &kp SQT        &kp ASTERISK  &kp EQUAL  &trans      &trans  &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp PIPE
+&kp SLASH   &kp DOLLAR         &kp AMPERSAND  &kp PERCENT   &kp TILDE  &trans      &trans  &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp QUESTION    &kp NON_US_BACKSLASH
+&trans      &trans             &trans         &trans        &trans     &trans      &trans  &trans                                                                      &trans
             >;
         };
 
