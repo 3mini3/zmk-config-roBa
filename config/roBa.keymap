@@ -91,10 +91,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp L         &kp U         &kp COMMA         &kp PERIOD                                                    &kp F        &kp W  &lt 5 R  &kp Y  &kp P
-&kp E             &kp I         &kp A         &kp O             &kp MINUS      &kp ESCAPE            &mt RIGHT_ALT LA(SPACE)  &kp K        &kp T  &kp N    &kp S  &kp H
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V             &kp SEMICOLON  &kp TAB               &kp LA(TAB)              &kp G        &kp D  &kp M    &kp J  &kp B
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 LANGUAGE_2  &lt 2 SPACE    &lt 1 LANGUAGE_1      &kp BACKSPACE            &lt 3 ENTER                         &kp DELETE
+&kp Q             &kp L         &kp U         &kp COMMA         &kp PERIOD                                          &kp F        &kp W  &lt 5 R  &kp Y  &kp P
+&kp E             &kp I         &kp A         &kp O             &kp MINUS      &kp LA(SPACE)         &kp ESCAPE     &kp K        &kp T  &kp N    &kp S  &kp H
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V             &kp SEMICOLON  &kp TAB               &kp LA(TAB)    &kp G        &kp D  &kp M    &kp J  &kp B
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 LANGUAGE_2  &lt 2 SPACE    &lt 1 LANGUAGE_1      &kp BACKSPACE  &lt 3 ENTER                         &kp DELETE
             >;
 
             sensor-bindings =
@@ -102,7 +102,7 @@
                 <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        FUNCTION {
+        layer1 {
             bindings = <
 &kp ESCAPE  &kp EXCLAMATION    &kp AT_SIGN    &kp HASH      &kp CARET                      &trans         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN
 &kp PLUS    &kp DOUBLE_QUOTES  &kp SQT        &kp ASTERISK  &kp EQUAL  &trans      &trans  &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp PIPE
@@ -111,7 +111,7 @@
             >;
         };
 
-        NUM {
+        layer2 {
             bindings = <
 &kp F1           &kp F2           &kp F3           &kp F4           &kp F5                                                        &kp F6           &kp F7           &kp F8           &kp F9           &kp F10
 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
@@ -120,7 +120,7 @@
             >;
         };
 
-        ARROW {
+        layer3 {
             bindings = <
 &kp ESCAPE  &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                             &trans  &kp PG_UP       &kp UP_ARROW    &kp PAGE_DOWN    &trans
 &kp HOME    &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &kp CAPSLOCK  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
@@ -131,7 +131,7 @@
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
-        MOUSE {
+        layer4 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
